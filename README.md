@@ -10,6 +10,12 @@ But Cacti did not support the extension of the **existing** rrd file.
 2. copy data values to new area that are expanded
    + because, Cacti(rrdtool) tries to refer to more detailed data, even if coarse data exists in a newly expanded area, it is judged that there is no data.
 
+## software requirements
+- zsh
+- perl
+- rrdtool
+- bc, grep, cut, sort, mv
+
 ## usage
     [prompt]$ ./rrdextend.sh HOGEHOGE.rrd
     rrdtool resize ./HOGEHOGE.rrd	 ... ok
